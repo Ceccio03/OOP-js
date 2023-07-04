@@ -45,8 +45,16 @@ const schoolB1 = new SchoolBook('matematicando', 'daniele petrelli', '23/04/2013
 // console.log(schoolB1.toString());
 // console.log(schoolB1.getUpperTitle());
 
-const libraryCollection = [book2, book3, magazine1, schoolB1];
+// const libraryCollection = [book2, book3, magazine1, schoolB1];
 
-for (const pub of libraryCollection) {
-    console.log(pub1.toString());
-}
+// for (const pub of libraryCollection) {
+//     console.log(pub.toString());
+// }
+
+const library1 = new Library([book2, book3, magazine1, schoolB1]);
+
+library1.deletePublication(3);
+
+const book4 = new Book('se questo è un uomo', 'primo levi', '12/05/1998', 'adephi');
+
+console.log(library1);

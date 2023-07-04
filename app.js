@@ -1,55 +1,72 @@
 console.log('oop');
 
-// const book1 = {
-//     title: 'iliade',
-//     author: ['omero'],
-//     dop: '27/12/2009',
-//     publisher: 'einaudi'
-// }
+// // const book1 = {
+// //     title: 'iliade',
+// //     author: 'omero',
+// //     dop: '27/12/2009',
+// //     publisher: 'einaudi'
+// // }
 
-const book2 = new Book('odissea', 'omero', '27/12/2010', 'einaudi');
-const book3 = new Book('la divina commedia', 'dante', '27/02/1998', 'feltrinelli');
+// const book2 = new Book('odissea', 'omero', '27/12/2010', 'einaudi');
 
-// console.log(book1);
-// console.log(book2);
+// const book3 = new Book('la divina commedia', 'dante', '27/02/1998', 'feltrinelli')
 
-// console.log(book1.title);
-// console.log(book2.title);
 
-// console.log(book1['author']);
-// console.log(book2['author']);
+// // console.log(book1);
+// // console.log(book2);
 
-// function getBookCard(book) {
-//     const card = 'Titolo: ' + book.title + '\n' + 'Autore: ' + book.author + '\n' + 'Data di pubblicazione: ' + book.dop + '\n' + 'Casa editrice: ' + book.publisher + '\n';
-    
-//     return card;
-// }
-// console.log(getBookCard(book1));
+// // console.log(book1.title);
+// // console.log(book2.title);
 
-// console.log(book2.toString());
-// console.log(book3 + '');
-// console.log(book3.getUpperTitle());
+// // console.log(book1['author']);
+// // console.log(book2['author']);
 
-const magazine1 = new Magazine('opera oggi', '12/6/2023', 'fabbri', 23);
 
-// console.log(magazine1.toString());
-// console.log(magazine1.getUpperTitle());
+// // function getBookCard(book){
+// //     const card = 'Titolo: ' + book.title + '\n' +
+// //                  'Autore: ' + book.author + '\n' +
+// //                  'Data di pubblicazione: ' + book.dop + '\n' +
+// //                  'Casa editrice: ' + book.publisher + '\n';
+// //     return card;
+// // }
 
-const pub1 = new Publication('pubblicazione1', '12/6/2020', 'fabbri');
+// // console.log(getBookCard(book1));
 
-// console.log(pub1.toString());
-// console.log(pub1.getUpperTitle());
+// // console.log(book2.toString());
+// // console.log(book3 + '');
 
-const schoolB1 = new SchoolBook('matematicando', 'daniele petrelli', '23/04/2013', 'zanichelli', 'matematica', 'terza media');
 
-// console.log(schoolB1.toString());
-// console.log(schoolB1.getUpperTitle());
+// // console.log(book3.getUpperTitle())
 
-// const libraryCollection = [book2, book3, magazine1, schoolB1];
 
-// for (const pub of libraryCollection) {
-//     console.log(pub.toString());
-// }
+// const magazine1 = new Magazine('opera oggi', '12/6/2023', 'fabbri', 23);
+
+// // console.log(magazine1.toString());
+
+// // console.log(magazine1.getUpperTitle())
+
+// // CLASSE ASTRATTA----------------
+
+// // const pub1 = new Publication('pubblicazione1', '12/6/2020', 'fabbri');
+
+// // console.log(pub1.toString());
+
+// // console.log(pub1.getUpperTitle())
+
+// const schoolB1 = new SchoolBook('matematicando', 'daniele petrelli', '23/4/2013', 'la scuola', 'matematica', 'terza media');
+//                                                                     // ['23', '3', '2013']
+//                                                                     // y => parseInt(a[2])                      
+// // console.log(schoolB1.toString());
+
+// // console.log(schoolB1.getUpperTitle())
+
+
+// // const libraryCollection = [book2, book3, magazine1, schoolB1];
+
+// // for (const pub of libraryCollection) {
+// //     console.log(pub.toString())
+// // }
+
 
 // const library1 = new Library([book2, book3, magazine1, schoolB1]);
 
@@ -62,18 +79,31 @@ const schoolB1 = new SchoolBook('matematicando', 'daniele petrelli', '23/04/2013
 // console.log(library1);
 
 const gui = new GUI();
+
 gui.start();
 
-// JSON------------------------------------------------------------------------------
+
+///JSON----------------------------------------------------
+
 // const student1 = {
 //     name: 'bryan',
 //     yob: 1994,
 //     isMarried: false
 // }
+
 // console.log(student1);
 
-// const studentJSON = JSON.stringify(student1);
-// console.log(studentJSON)
+// const student1JSON = JSON.stringify(student1);
+
+// console.log(student1JSON);
+
+
+// const stringArray = ['qui', 'quo', 'qua'];
+
+// const stringArrayJSON = JSON.stringify(stringArray);
+
+// console.log(stringArrayJSON);
+
 
 // const student2 = {
 //     name: 'francesca',
@@ -81,12 +111,16 @@ gui.start();
 //     isMarried: false
 // }
 
+
 // const studentArray = [student1, student2];
+
 // const studentArrayJSON = JSON.stringify(studentArray);
 
 // console.log(studentArrayJSON);
 
-const jsonString = '[{"name":"bryan","yob":1994,"isMarried":false},{"name":"francesca","yob":1989,"isMarried":false}]';
-const studentArray = JSON.parse(jsonString);
 
-console.log(studentArray);
+// const jsonString = '[{"name":"bryan","yob":1994,"isMarried":false},{"name":"francesca","yob":1989,"isMarried":false}]'
+
+// const studentArray = JSON.parse(jsonString);
+
+// console.log(studentArray);

@@ -61,8 +61,8 @@ const schoolB1 = new SchoolBook('matematicando', 'daniele petrelli', '23/04/2013
 
 // console.log(library1);
 
-// const gui = new GUI();
-// gui.start();
+const gui = new GUI();
+gui.start();
 
 // JSON------------------------------------------------------------------------------
 // const student1 = {

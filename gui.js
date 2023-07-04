@@ -1,7 +1,13 @@
 class GUI {
     constructor() {
-        this.library = new Library();
         this.storage = new Storage();
+        this.library = new Library();
+
+        const data = this.storage.loadData();
+
+        if (data) {
+            this.library.fromDbObjects(data);
+        }
     }
 
     start() {

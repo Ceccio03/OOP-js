@@ -65,12 +65,28 @@ const schoolB1 = new SchoolBook('matematicando', 'daniele petrelli', '23/04/2013
 // gui.start();
 
 // JSON------------------------------------------------------------------------------
-const student1 = {
-    name: 'bryan',
-    yob: 1994,
-    isMarried: false
-}
-console.log(student1);
+// const student1 = {
+//     name: 'bryan',
+//     yob: 1994,
+//     isMarried: false
+// }
+// console.log(student1);
 
-const studentJSON = JSON.stringify(student1);
-console.log(studentJSON)
+// const studentJSON = JSON.stringify(student1);
+// console.log(studentJSON)
+
+// const student2 = {
+//     name: 'francesca',
+//     yob: 1989,
+//     isMarried: false
+// }
+
+// const studentArray = [student1, student2];
+// const studentArrayJSON = JSON.stringify(studentArray);
+
+// console.log(studentArrayJSON);
+
+const jsonString = '[{"name":"bryan","yob":1994,"isMarried":false},{"name":"francesca","yob":1989,"isMarried":false}]';
+const studentArray = JSON.parse(jsonString);
+
+console.log(studentArray);

@@ -1,6 +1,7 @@
 class GUI {
     constructor() {
         this.library = new Library();
+        this.storage = new Storage();
     }
 
     start() {

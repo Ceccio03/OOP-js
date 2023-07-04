@@ -1,5 +1,5 @@
-class Publication{
-    constructor(title, dop, publisher){
+class Publication {
+    constructor(title, dop, publisher) {
         this.title = title;
         const dopArray = dop.split('/');
         const year = parseInt(dopArray[2]);

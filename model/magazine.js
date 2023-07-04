@@ -1,5 +1,5 @@
-class Magazine extends Publication{
-    constructor(title, dop, publisher, issue){
+class Magazine extends Publication {
+    constructor(title, dop, publisher, issue) {
         super(title, dop, publisher);
         this.issue = issue;
     }

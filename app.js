@@ -71,3 +71,6 @@ const student1 = {
     isMarried: false
 }
 console.log(student1);
+
+const studentJSON = JSON.stringify(student1);
+console.log(studentJSON)

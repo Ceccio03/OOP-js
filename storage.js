@@ -5,6 +5,7 @@ class Storage {
 
     saveData(data) {
         const dataString = JSON.stringify(data);
+        
         console.log(dataString);
     }
 }

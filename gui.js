@@ -27,9 +27,10 @@ class GUI {
         const author = prompt('Inseriesci l\'autore');
         const dop = prompt('Inseriesci la data di pubblicazione nel formato gg/mm/aaaa');
         const publisher = prompt('Inseriesci la casa editrice');
-
         const book = new Book(title, author, dop, publisher);
+
         this.library.addPublication(book);
+        this.storage.saveData(this.library.publications);
     }
 
     showBooks() {
@@ -41,6 +42,8 @@ class GUI {
     deleteBook() {
         const humanIndex = prompt('Inseriesci il numero del libro da eliminare');
         const index = humanIndex - 1;
+
         this.library.deletePublication(index);
+        this.storage.saveData(this.library.publications);
     }
 }

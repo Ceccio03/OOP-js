@@ -12,7 +12,7 @@ class GUI {
             } else if (firstChoice === '2') {
                 this.insertBook();
             } else if (firstChoice === '3') {
-                
+                this.deleteBook();
             } else if (firstChoice === '4') {
                 break;
             } else {
@@ -34,6 +34,12 @@ class GUI {
     showBooks() {
         const allBooks = this.library.getAllBookCards();
 
-        console.log(allBooks);
+        alert(allBooks);
+    }
+
+    deleteBook() {
+        const humanIndex = prompt('Inseriesci il numero del libro da eliminare');
+        const index = humanIndex - 1;
+        this.library.deletePublication(index);
     }
 }

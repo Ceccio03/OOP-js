@@ -60,3 +60,6 @@ const book4 = new Book('se questo è un uomo', 'primo levi', '12/05/1998', 'adep
 library1.addPublication(book4);
 
 console.log(library1);
+
+const gui = new GUI();
+gui.start();
